@@ -1,0 +1,33 @@
+Task0:
+Worst case: O(1)
+as lists are ordered we can find first and last element of a list in constant time.
+
+Task1:
+Worst case: O(n)
+merging calls and texts => O(len(calls) + len(texts)) => O(n)
+iterating over rows => O(n)
+  adding phone numbers to set => O(1)
+Total => O(n) + O(n)*O(1) => O(n)
+
+Task2:
+Worst case: O(n)
+iterating over calls to get time spent map => O(n)
+  inside for loop all are constant oprations 
+iterating Over timespent map to get max value => O(n)
+Total => O(n) + O(n) => O(n)
+
+Task3:
+Worst case: O(nlogn)
+iterating over calls  => O(n)
+  inside for loop all are constant oprations 
+sorting List => O(nlogn)
+Total => O(n) + O(nlogn) => O(nlogn)
+
+Task4:
+Worst case: O(nlogn)
+iterating over calls  => O(n)
+  inside for loop all are constant oprations 
+intersection of marketing_numbers, non_marketing_numbers => O(n)
+difference of marketing_numbers and intersection of marketing_numbers, non_marketing_numbers => O(n)
+sorting List => O(nlogn)
+Total => O(n) + O(n) + O(n) + O(nlogn) => O(nlogn)
